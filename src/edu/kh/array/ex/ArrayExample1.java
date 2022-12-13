@@ -11,7 +11,8 @@ Scanner sc = new Scanner(System.in);
 	 *  - 같은 자료형의 변수를 하나의 묵음으로다루는 것(자료구조)
 	 *  - 묶여진 변수들은 하나의 배열명으로 불려지고 구분은 index를 이용함.
 	 *  (index는 0부터 시작하는 정수)
-	 * 
+	 *  - 여러값 지정가능
+	 *  - 한번 크기 지정하면변경 불가능
 	 * 
 	 * */
 	
@@ -304,7 +305,74 @@ Scanner sc = new Scanner(System.in);
 	
 	
 	
+	public void ex9() {
+		
+//		1. 문자열을 입력 받아 한글자씩 잘라내어 char배열에 순서대로 저장
+//		2. 문자 하나를 입력 받아 일치하는 문자가 char 배열에 몇개 존재하는 지 확인
+//		3. 단, 일치하는 문자가 없을 경우  "존재하지 않습니다" 출력
+//		
+//		[사용 해야하는 기술, 기능]
+//				1 배열 검색
+//				2 String.length() : 문자열의 길이
+//				ex) "hello".length() - > 5
+//				
+//				String.charAt(index) : 문자열에서 특징 inderx에 위치한 문자 하나를 얻어옴
+//				ex)  "hello".charAt(1) - > 'e'
+//						01234
+//						
+//				4)count (숫자세기)
+//	
+		
+		System.out.print("문자열 입력 : " );
+		String input = sc.next();
+		//hello
+//		1. 문자열을 입력 받아 한글자씩 잘라내어 char배열에 순서대로 저장
+		char[] arr = new char[input.length()];
+		
+//		2. 문자 하나를 입력 받아 일치하는 문자가 char 배열에 몇개 존재하는 지 확인		
+		for(int i = 0; i<arr.length; i++) {
+			arr[i]  = (input.charAt(i));
+			
+			
+					
+				
+		}
+		
+	// 중간확인과정	
+	//	System.out.println(Arrays.toString(arr));
+		
+	System.out.print("검색할 문자 입력 :");
+	char ch = sc.nextLine().charAt(0);
+	
+	//String.charAt(0); : ㅁ누자열 제일 앞 문자
+	
+	int count = 0; // 같은 글자 갯수 세기 위한 변수
+	
+	
+for(int i = 0; i < arr.length; i++) {
+	if(arr[i] == ch) {
+		
+		count++;
+		
+		
+	}
+}
+		
 
+
+if(count > 0 ) {
+	System.out.println(count + "개 있음");
+	
+}else {
+	System.out.println("존재하지 않음");
+}
+
+
+
+		
+	}
+	
+	
 
 
 }
