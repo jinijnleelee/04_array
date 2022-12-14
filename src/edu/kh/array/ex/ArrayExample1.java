@@ -186,7 +186,7 @@ Scanner sc = new Scanner(System.in);
 			}
 			else if(score[i] < min) { //최저점 비교
 				min = score[i];
-			}
+			 }
 			
 			
 		}
@@ -316,7 +316,7 @@ Scanner sc = new Scanner(System.in);
 //				2 String.length() : 문자열의 길이
 //				ex) "hello".length() - > 5
 //				
-//				String.charAt(index) : 문자열에서 특징 inderx에 위치한 문자 하나를 얻어옴
+//				String.charAt(index) : 문자열에서 특징 index에 위치한 문자 하나를 얻어옴
 //				ex)  "hello".charAt(1) - > 'e'
 //						01234
 //						
