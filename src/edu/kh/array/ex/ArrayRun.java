@@ -8,6 +8,7 @@ public class ArrayRun {
 		//ae.ex4();
 		//ae.ex8();
 		//ae.ex9();
+		aee.ShallowCopy();
 		//aee.deepCopy();
 		//aee.creatLottoNumber();
 		
